@@ -1,63 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Excelsior Technical Solutions</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #0f1a2b url('https://images.unsplash.com/photo-1535223289827-42f1e9919769?fit=crop&w=1950&q=80') no-repeat center center fixed; background-size: cover; color: #fff; }
-    header { background: rgba(0, 17, 32, 0.8); padding: 1em; text-align: center; }
-    nav a { color: #fff; margin: 0 15px; text-decoration: none; }
-    nav .dropdown { display: inline-block; position: relative; }
-    nav .dropdown-content { display: none; position: absolute; background: #1a2536; min-width: 160px; }
-    nav .dropdown-content a { display: block; padding: 10px; color: #fff; text-decoration: none; }
-    nav .dropdown:hover .dropdown-content { display: block; }
-    section { background: rgba(0, 17, 32, 0.8); padding: 2em; margin: 1em; border-radius: 8px; }
-    footer { background: rgba(26, 37, 54, 0.9); text-align: center; padding: 1em; margin-top: 2em; }
+    body { margin: 0; font-family: Arial, sans-serif; }
+    header { background: #ffffff; padding: 1em; text-align: center; border-bottom: 2px solid #002147; }
+    nav a { margin: 0 15px; text-decoration: none; color: #002147; font-weight: bold; }
+    nav a:hover { color: #d90429; }
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1581090700227-4c4f50c21283?fit=crop&w=1950&q=80');
+      background-size: cover; background-position: center;
+      color: white; padding: 100px 20px; text-align: center;
+    }
+    .hero h1 { font-size: 2.5em; margin: 0; }
+    .hero p { font-size: 1.2em; max-width: 600px; margin: 20px auto; }
+    section { padding: 50px 20px; text-align: center; }
+    .services { display: flex; flex-wrap: wrap; justify-content: center; }
+    .service-card {
+      background: #f4f4f4; color: #333; width: 250px; margin: 15px; padding: 20px;
+      border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .service-card h3 { margin-top: 0; }
+    footer { background: #002147; color: white; text-align: center; padding: 20px; }
+    @media (max-width: 768px) {
+      .services { flex-direction: column; align-items: center; }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Excelsior Technical Solutions</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="capabilities.html">Capabilities</a>
-      <a href="past-performance.html">Past Performance</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-      <div class="dropdown">
-        <a href="#">Careers</a>
-        <div class="dropdown-content">
-          <a href="#recruiting">Recruiting Cleared Individuals</a>
-        </div>
-      </div>
+      <a href="#home">Home</a>
+      <a href="#why">Why Choose Us</a>
+      <a href="#services">Our Services</a>
+      <a href="#industries">Industries</a>
+      <a href="#contact">Contact Us</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>Excelsior Technical Solutions is a woman- and minority-owned, service-disabled veteran-owned small business (SDVOSB) providing cybersecurity-focused IT consulting, engineering, and program management services to Department of Defense and federal clients.</p>
+  <div class="hero" id="home">
+    <h1>IT Consulting & Services</h1>
+    <p>Delivering mission-critical IT and cybersecurity solutions for the Department of Defense and federal agencies.</p>
+  </div>
+
+  <section id="why">
+    <h2>Why Choose Us</h2>
+    <p>We combine deep technical expertise with proven program and project management skills, delivering secure and scalable solutions tailored to mission success. Our team is dedicated to integrity, innovation, and operational excellence.</p>
   </section>
 
   <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Cybersecurity & Zero Trust Architecture</li>
-      <li>IT Infrastructure Engineering & Operations</li>
-      <li>Identity, Credential, & Access Management (ICAM)</li>
-      <li>Systems Engineering & Integration</li>
-      <li>Program & Project Management Office (PMO)</li>
-      <li>Service Desk & IT Support</li>
-      <li>Software Development & Application Integration</li>
-      <li>Knowledge Management & AI-Driven Analysis</li>
-      <li>Mission Support & Logistics</li>
-    </ul>
-    <p>We design secure, efficient, and mission-ready solutions tailored for defense and intelligence operations.</p>
+    <div class="services">
+      <div class="service-card">
+        <h3>Cloud Solutions</h3>
+        <p>Design, migration, and secure operations for hybrid and cloud environments.</p>
+      </div>
+      <div class="service-card">
+        <h3>Managed IT Services</h3>
+        <p>Comprehensive IT support, infrastructure management, and performance monitoring.</p>
+      </div>
+      <div class="service-card">
+        <h3>Disaster Recovery</h3>
+        <p>Robust planning and recovery solutions to protect mission-critical data and systems.</p>
+      </div>
+      <div class="service-card">
+        <h3>Cloud Desktop</h3>
+        <p>Flexible, secure virtual desktop solutions for remote and hybrid workforces.</p>
+      </div>
+      <div class="service-card">
+        <h3>Network Solutions</h3>
+        <p>Design, optimization, and defense of complex network infrastructures.</p>
+      </div>
+      <div class="service-card">
+        <h3>Support Consulting</h3>
+        <p>IT service desk, troubleshooting, and user support for seamless mission operations.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="recruiting">
-    <h2>Recruiting Cleared Individuals</h2>
-    <p>Excelsior actively recruits top-tier, cleared talent to support critical DoD contracts. Contact us to learn more about current opportunities.</p>
+  <section id="industries">
+    <h2>Industries We Serve</h2>
+    <p>Department of Defense, Intelligence Community, Federal Civilian Agencies, and critical national security sectors.</p>
   </section>
 
   <section id="contact">
