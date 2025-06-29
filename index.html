@@ -5,23 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Excelsior Technical Solutions</title>
   <style>
-    body { margin: 0; font-family: Arial, sans-serif; background-image: url('https://images.unsplash.com/photo-1532280980450-4243f5f1e3e1?fit=crop&w=1950&q=80'); background-size: cover; background-attachment: fixed; }
+    body { margin: 0; font-family: Arial, sans-serif; }
     header { background: rgba(0, 33, 71, 0.95); padding: 1em; text-align: center; }
     nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     nav a:hover { color: #d90429; }
     .hero {
       position: relative;
       height: 500px;
-      background-image: url('SEC0119-Cover-Feat-slide1_900px.jpg');
+      background-image: url('1678462383959.jpg');
       background-size: cover;
       background-position: center;
-      filter: blur(2px) brightness(0.6);
+      background-repeat: no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
     .hero-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       background: rgba(0, 33, 71, 0.85);
       padding: 30px;
       border-radius: 10px;
@@ -57,11 +56,12 @@
     </nav>
   </header>
 
-  <div class="hero" id="home"></div>
-  <div class="hero-content">
-    <h1>IT Consulting & Services</h1>
-    <p>Providing mission-critical IT solutions for defense, federal, and commercial clients — secure, scalable, and tailored to your mission.</p>
-    <a href="#contact" style="display: inline-block; margin-top: 15px; background: #d90429; color: white; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 5px;">Find out more</a>
+  <div class="hero" id="home">
+    <div class="hero-content">
+      <h1>IT Consulting & Services</h1>
+      <p>Providing mission-critical IT solutions for defense, federal, and commercial clients — secure, scalable, and tailored to your mission.</p>
+      <a href="#contact" style="display: inline-block; margin-top: 15px; background: #d90429; color: white; padding: 12px 24px; text-decoration: none; font-weight: bold; border-radius: 5px;">Find out more</a>
+    </div>
   </div>
 
   <div class="blue-section">
@@ -72,27 +72,27 @@
     <div class="services">
       <div class="service-card">
         <h3>Identity, Credential, & Access Management</h3>
-        <p>Multi-factor authentication, PKI, identity governance, access control, privileged access, and end-to-end identity services to secure your workforce and systems.</p>
+        <p>Multi-factor authentication, PKI, identity governance, access control, privileged access, and complete identity services to secure your environment.</p>
       </div>
       <div class="service-card">
         <h3>Software Development</h3>
-        <p>Custom application and system software design, architecture planning, database development, and modern framework solutions including Node.js and React.</p>
+        <p>Custom application & system software design, architecture planning, database development, and modern frameworks such as Node.js and React.</p>
       </div>
       <div class="service-card">
         <h3>System Engineering & Integration</h3>
-        <p>Seamless integration of COTS solutions, enterprise architecture planning, workflow optimization, and analysis of alternatives for complex environments.</p>
+        <p>Integration of COTS solutions, enterprise architecture, workflow optimization, and advanced system analysis for mission-critical performance.</p>
       </div>
       <div class="service-card">
         <h3>Service Desk & IT Support</h3>
-        <p>Comprehensive user support, proactive network monitoring, incident resolution, escalation management, and robust knowledge base creation.</p>
+        <p>Complete user support, proactive monitoring, incident resolution, escalation handling, and comprehensive knowledge base development.</p>
       </div>
       <div class="service-card">
         <h3>Intelligence Production</h3>
-        <p>Advanced geospatial and imagery analysis, data visualization, graphic design, and development of web-based analytic tools supporting mission objectives.</p>
+        <p>Geospatial and imagery analysis, data visualization, graphic support, and application/web tool development for operational insights.</p>
       </div>
       <div class="service-card">
         <h3>Program Management Office</h3>
-        <p>Program scheduling, full lifecycle project management, system certification, compliance oversight, and strategic risk mitigation for complex missions.</p>
+        <p>Full lifecycle project management, scheduling, certification, compliance, and risk mitigation to ensure mission success.</p>
       </div>
     </div>
   </section>
