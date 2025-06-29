@@ -6,24 +6,27 @@
   <title>Excelsior Technical Solutions</title>
   <style>
     body { margin: 0; font-family: Arial, sans-serif; }
-    header { background: #ffffff; padding: 1em; text-align: center; border-bottom: 2px solid #002147; }
-    nav a { margin: 0 15px; text-decoration: none; color: #002147; font-weight: bold; }
+    header { background: #002147; padding: 1em; text-align: center; }
+    nav a { margin: 0 15px; text-decoration: none; color: white; font-weight: bold; }
     nav a:hover { color: #d90429; }
     .hero {
-      background-image: url('https://images.unsplash.com/photo-1581090700227-4c4f50c21283?fit=crop&w=1950&q=80');
+      background-image: url('https://images.unsplash.com/photo-1556761175-129418cb2dfe?fit=crop&w=1950&q=80');
       background-size: cover; background-position: center;
-      color: white; padding: 100px 20px; text-align: center;
+      color: #002147; padding: 80px 20px; text-align: left;
     }
     .hero h1 { font-size: 2.5em; margin: 0; }
-    .hero p { font-size: 1.2em; max-width: 600px; margin: 20px auto; }
+    .hero p { font-size: 1.2em; max-width: 500px; margin-top: 10px; }
     section { padding: 50px 20px; text-align: center; }
     .services { display: flex; flex-wrap: wrap; justify-content: center; }
     .service-card {
-      background: #f4f4f4; color: #333; width: 250px; margin: 15px; padding: 20px;
-      border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      background: #ffffff; color: #333; width: 250px; margin: 15px; padding: 20px;
+      border: 2px solid #002147; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
+    .service-card:hover { transform: scale(1.05); }
     .service-card h3 { margin-top: 0; }
     footer { background: #002147; color: white; text-align: center; padding: 20px; }
+    .cta { background: #f4f4f4; color: #333; padding: 40px; }
     @media (max-width: 768px) {
       .services { flex-direction: column; align-items: center; }
     }
@@ -33,62 +36,74 @@
   <header>
     <nav>
       <a href="#home">Home</a>
-      <a href="#why">Why Choose Us</a>
       <a href="#services">Our Services</a>
-      <a href="#industries">Industries</a>
-      <a href="#contact">Contact Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a href="#careers">Careers</a>
     </nav>
   </header>
 
   <div class="hero" id="home">
     <h1>IT Consulting & Services</h1>
-    <p>Delivering mission-critical IT and cybersecurity solutions for the Department of Defense and federal agencies.</p>
+    <p>Providing mission-critical IT solutions for defense, federal, and commercial clients — secure, scalable, and tailored to your mission.</p>
   </div>
-
-  <section id="why">
-    <h2>Why Choose Us</h2>
-    <p>We combine deep technical expertise with proven program and project management skills, delivering secure and scalable solutions tailored to mission success. Our team is dedicated to integrity, innovation, and operational excellence.</p>
-  </section>
 
   <section id="services">
     <h2>Our Services</h2>
     <div class="services">
       <div class="service-card">
         <h3>Cloud Solutions</h3>
-        <p>Design, migration, and secure operations for hybrid and cloud environments.</p>
+        <p>Secure migration, architecture, and managed cloud services.</p>
+        <a href="#">Learn More</a>
       </div>
       <div class="service-card">
         <h3>Managed IT Services</h3>
-        <p>Comprehensive IT support, infrastructure management, and performance monitoring.</p>
+        <p>End-to-end support and operations for enterprise IT environments.</p>
+        <a href="#">Learn More</a>
       </div>
       <div class="service-card">
         <h3>Disaster Recovery</h3>
-        <p>Robust planning and recovery solutions to protect mission-critical data and systems.</p>
+        <p>Comprehensive planning to protect critical assets and data.</p>
+        <a href="#">Learn More</a>
       </div>
       <div class="service-card">
         <h3>Cloud Desktop</h3>
-        <p>Flexible, secure virtual desktop solutions for remote and hybrid workforces.</p>
+        <p>Modern, secure, and flexible virtual desktop solutions.</p>
+        <a href="#">Learn More</a>
       </div>
       <div class="service-card">
         <h3>Network Solutions</h3>
-        <p>Design, optimization, and defense of complex network infrastructures.</p>
+        <p>Design, implement, and secure advanced network architectures.</p>
+        <a href="#">Learn More</a>
       </div>
       <div class="service-card">
         <h3>Support Consulting</h3>
-        <p>IT service desk, troubleshooting, and user support for seamless mission operations.</p>
+        <p>Comprehensive IT help desk and support services.</p>
+        <a href="#">Learn More</a>
       </div>
     </div>
   </section>
 
-  <section id="industries">
-    <h2>Industries We Serve</h2>
-    <p>Department of Defense, Intelligence Community, Federal Civilian Agencies, and critical national security sectors.</p>
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>“Excelsior’s team delivered secure, agile solutions that kept our mission running flawlessly.” — Defense Agency CIO</p>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to find out more?</h2>
+    <p>Contact us today to learn how we can support your mission and secure your IT environment.</p>
+    <a href="#contact">Get in Touch</a>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Email: info@excelsiortechnicalsolutions.com</p>
     <p>Location: 525 N. Telstar Drive, Colorado Springs, CO 80920</p>
+  </section>
+
+  <section id="careers">
+    <h2>Recruiting Cleared Individuals</h2>
+    <p>We actively recruit cleared professionals to support critical DoD and federal contracts. Join a mission-focused team dedicated to excellence.</p>
   </section>
 
   <footer>
